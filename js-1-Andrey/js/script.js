@@ -1,5 +1,5 @@
-let name = prompt("Привіт, як тебе звати ?");
-let age = prompt("Скільки тобі років ?");
+let name = prompt("Привет,как тебя зовут?");
+let age = prompt("Сколько тебе лет?");
 
 if(age < 0){
     alert("Ошибка!!!");
