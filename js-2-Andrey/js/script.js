@@ -3,7 +3,6 @@ let words = [
     eng = ["Hello", "Bear", "Cloud"],
 ];
 
-console.log(words[1]);
 
 let rusBtn = document.querySelector('.btn--rus');
 let engBtn = document.querySelector('.btn--eng');
