@@ -2,8 +2,6 @@ let words = {
     "rus": ["Привет", "Медведь", "Облоко"],
     "eng": ["Hello", "Bear", "Cloud"],
 }
-   
-
 
 let rusBtn = document.querySelector('.btn--rus');
 let engBtn = document.querySelector('.btn--eng');
