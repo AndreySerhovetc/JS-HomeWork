@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork4</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="POST" class="js-form">
+            <h1>Регистрация</h1>
+
+            <label for="name">Имя:</label>
+            <input type="text" name="user_name" placeholder="Ivan" data-validate-field="name" required>
+
+            <label for="email">e-mail:</label>
+            <input type="email" name="user_email" placeholder="a@gmail.com" data-validate-field="email" required>
+
+            <label for="phone">Номер телефона:</label>
+            <input class="phone" type="tel" name="user_phone" data-validate-field="phone" required>
+
+            <label for="age">Возраст</label>
+            <input type="text" name="user_age" data-validate-field="age" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" name="user_password" data-validate-field="passoword" required>
+
+            <button type="submit">Отправить</button>
+        </form>
+        
+    </div>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

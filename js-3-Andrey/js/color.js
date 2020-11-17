@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
     color.innerHTML = "#" + randomColor;
   }
   
-addEventListener('keydown', function(evt) {
+addEventListener('keyup', function(evt) {
     if (evt.code == 'Space') {
         setBg();
       }
