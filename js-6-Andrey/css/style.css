@@ -49,18 +49,43 @@ body{
     align-items: center;
     margin: 0 auto;
     position: absolute;
-    transform: translateX(0);
     transition: 0.2s all ease-in-out;
     top: 80px;
     width: 100%;
     height: 80vh;
     
+    
+}
+.scrollright {
+    animation-name: scrolright ; 
+    animation-duration: 1.5s;
 }
 
+@keyframes scrolright {
+    from {
+        transform: translateX(100%);
+    }
+    
+    to {
+        transform: translateX(0)
+    }
+  }
+
 .content--hidden{
-    opacity: 0;
-    transform: translateX(100%);
+    display: none;
 }
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    transition: 0.2s all ease-in-out;
+    top: 80px;
+    width: 100%;
+    height: 80vh;
+}
+
 
 
 /* color */
