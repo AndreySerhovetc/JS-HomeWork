@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeWork6</title>
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/normalize.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="hero">
         <div class="btn-box">
-            <button class="btn__item btn__item--active" data-tabnumber ="1"><i class="fa fa-paint-brush"></i>Генератор цвета</button>
-            <button class="btn__item" data-tabnumber ="2"><i class="fa fa-square"></i>Скругления квардрата</button>
-            <button class="btn__item" data-tabnumber ="3"><i class="fa fa-user-plus"></i>Регистрация</button>
+            <button class="btn__item btn__item--active" data-tabnumber="1"><i class="fa fa-paint-brush"></i>Генератор
+                цвета</button>
+            <button class="btn__item" data-tabnumber="2"><i class="fa fa-square"></i>Скругления квардрата</button>
+            <button class="btn__item" data-tabnumber="3"><i class="fa fa-user-plus"></i>Регистрация</button>
         </div>
         <div class="content" id="content1">
             <div class="wrap">
@@ -33,7 +37,7 @@
                     <p class="rangeTopRightOutput">0</p>
                     <input class="rangeTopRight" type="range" min="1" max="50" step="1" value="0">
                 </div>
-        
+
                 <div class="range__box range__box--lb">
                     <p class="rangeBootomLeftOutput">0</p>
                     <input class="rangeBootomLeft" type="range" min="1" max="50" step="1" value="0">
@@ -42,7 +46,7 @@
                     <p class="rangeBootomRightOutput">0</p>
                     <input class="rangeBootomRight" type="range" min="1" max="50" step="1" value="0">
                 </div>
-        
+
             </div>
         </div>
 
@@ -50,25 +54,28 @@
             <div class="form__container">
                 <form action="#" method="POST" class="js-form">
                     <h1>Регистрация</h1>
-        
+
                     <label for="name">Имя:</label>
-                    <input class="input__field" type="text" name="user_name" placeholder="Ivan" data-validate-field="name" required>
-        
+                    <input class="input__field" type="text" name="user_name" placeholder="Ivan"
+                        data-validate-field="name" required>
+
                     <label for="email">e-mail:</label>
-                    <input class="input__field" type="email" name="user_email" placeholder="a@gmail.com" data-validate-field="email" required>
-        
+                    <input class="input__field" type="email" name="user_email" placeholder="a@gmail.com"
+                        data-validate-field="email" required>
+
                     <label for="phone">Номер телефона:</label>
                     <input class="input__field phone" type="tel" name="user_phone" data-validate-field="phone" required>
-        
+
                     <label for="age">Возраст</label>
-                    <input class="input__field type="text" name="user_age" data-validate-field="age" required>
-        
+                    <input class="input__field type=" text" name="user_age" data-validate-field="age" required>
+
                     <label for="password">Пароль:</label>
-                    <input class="input__field" type="password" name="user_password" data-validate-field="passoword" required>
-        
+                    <input class="input__field" type="password" name="user_password" data-validate-field="passoword"
+                        required>
+
                     <button type="submit">Отправить</button>
                 </form>
-                
+
             </div>
         </div>
     </div>
@@ -79,4 +86,5 @@
     <script src="js/send.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
