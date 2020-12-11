@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let addMessage = document.querySelector(".box__field"),
         addButton = document.querySelector(".box__btn"),
-
         listWrapper = document.querySelector(".list-wrapper");
 
     let arrayTasks;
@@ -29,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             arrayTasks.push(new newTask(addMessage.value));
             refreshLocalStorage();
             showTaskList();
+
         }
         addMessage.value = null;
     }
@@ -52,7 +52,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const tasksCheckbox = document.querySelectorAll(".task-status");
         const deleteBtn = document.querySelectorAll(".btn-delete");
+        const taskRow = document.querySelectorAll(".task-row");
 
+
+        tasksCheckbox.forEach(elem => {
+            elem.addEventListener("click", function() {
+
+            })
+        });
 
 
         tasksCheckbox.forEach(elem => {
@@ -61,6 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         deleteBtn.forEach(elem => {
             elem.addEventListener("click", deleteTask)
+            elem.parentElement.classList.add("rotate-center");
+            //elem.parentElement.classList.remove("rotate-center");
         });
     }
 
@@ -73,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     function deleteTask() {
+        this.parentElement.classList.add("color");
         arrayTasks.splice(this.dataset.index, 1);
         refreshLocalStorage();
         showTaskList();

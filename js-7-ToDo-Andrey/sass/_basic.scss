@@ -1,9 +1,10 @@
+@import "vars";
 * {
     box-sizing: border-box;
 }
 
 body {
-    background: #c2b2a5;
+    background: $bgc;
     font-family: Arial, Helvetica, sans-serif;
 }
 

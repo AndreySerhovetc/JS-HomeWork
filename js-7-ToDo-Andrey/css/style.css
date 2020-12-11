@@ -286,3 +286,7 @@ body {
     animation-timing-function: ease-out;
   }
 }
+
+.color {
+  color: red;
+}
