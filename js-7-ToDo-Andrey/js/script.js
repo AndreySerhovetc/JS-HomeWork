@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const addNewTask = () => {
-        if (addMessage.value == "") {
+        if (addMessage.value.trim() == "") {
             addMessage.classList.add("box__field--error");
         } else {
             addMessage.classList.remove("box__field--error");
