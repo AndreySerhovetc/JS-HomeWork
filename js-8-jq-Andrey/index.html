@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="btn-box">
+            <button class="btn__item " data-tabnumber="1"><i class="fa fa-paint-brush"></i>Генератор
+                цвета</button>
+            <button class="btn__item" data-tabnumber="2"><i class="fa fa-square"></i>Скругления квардрата</button>
+            <button class="btn__item" data-tabnumber="3"><i class="fa fa-layer-group"></i>Вывод массива</button>
+        </div>
+        <div class="content">
+            <div class="wrap">
+                <h1 class="color">For start Press space</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="wrap__box box__container">
+                <div class="box"></div>
+                <div class="range__box range__box--lt">
+                    <p class="rangeTopLeftOutput">0</p>
+                    <input class="rangeTopLeft" type="range" min="1" max="50" step="1" value="0">
+                </div>
+                <div class="range__box range__box--rt">
+                    <p class="rangeTopRightOutput">0</p>
+                    <input class="rangeTopRight" type="range" min="1" max="50" step="1" value="0">
+                </div>
+
+                <div class="range__box range__box--lb">
+                    <p class="rangeBootomLeftOutput">0</p>
+                    <input class="rangeBootomLeft" type="range" min="1" max="50" step="1" value="0">
+                </div>
+                <div class="range__box range__box--rb">
+                    <p class="rangeBootomRightOutput">0</p>
+                    <input class="rangeBootomRight" type="range" min="1" max="50" step="1" value="0">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="btn-group">
+                <button class="btn-arr btn-arr--rus">Rus</button>
+                <button class="btn-arr btn-arr--eng">Eng</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/color.js"></script>
+<script src="js/border.js"></script>
+<script src="js/arr.js"></script>
+
+</html>

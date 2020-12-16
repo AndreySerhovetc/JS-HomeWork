@@ -1,0 +1,62 @@
+@import "vars";
+.hero {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    & .fa {
+        margin-right: 20px;
+    }
+}
+
+.btn__item {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    &--active {
+        color: $accent_color;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    transition: 0.2s all ease-in-out;
+    top: 80px;
+    width: 100%;
+    height: 80vh;
+    &--hidden {
+        display: none;
+    }
+}
+
+.scrollright {
+    animation-name: scrolright;
+    animation-duration: 1.5s;
+}
+
+@keyframes scrolright {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0)
+    }
+}
